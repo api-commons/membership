@@ -1,0 +1,203 @@
+[
+ {
+  "slug": "antavo",
+  "specs": [
+   "openapi/_original/antavo-async-events-openapi.yml",
+   "openapi/_original/antavo-authentication-openapi.yml",
+   "openapi/_original/antavo-bulk-operations-openapi.yml",
+   "openapi/_original/antavo-clubs-openapi.yml",
+   "openapi/_original/antavo-coupon-pools-openapi.yml",
+   "openapi/_original/antavo-coupons-openapi.yml",
+   "openapi/_original/antavo-customer-openapi.yml",
+   "openapi/_original/antavo-display-openapi.yml",
+   "openapi/_original/antavo-entities-openapi.yml",
+   "openapi/_original/antavo-events-openapi.yml",
+   "openapi/_original/antavo-faq-openapi.yml",
+   "openapi/_original/antavo-leaderboard-openapi.yml",
+   "openapi/_original/antavo-loyalty-read-openapi.yml",
+   "openapi/_original/antavo-offers-openapi.yml",
+   "openapi/_original/antavo-points-preview-openapi.yml",
+   "openapi/_original/antavo-promotion-engine-openapi.yml",
+   "openapi/_original/antavo-rewards-openapi.yml",
+   "openapi/_original/antavo-social-share-campaigns-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bjs-wholesale-club",
+  "specs": [
+   "openapi/_original/bjs-wholesale-club-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "blackbird",
+  "specs": [
+   "openapi/_original/blackbird-flynet-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "breeze-chms",
+  "specs": [
+   "openapi/_original/breeze-chms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buymeacoffee",
+  "specs": [
+   "openapi/_original/buymeacoffee-openapi.json"
+  ]
+ },
+ {
+  "slug": "circle-community",
+  "specs": [
+   "openapi/_original/circle-community-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cobot",
+  "specs": [
+   "openapi/_original/cobot-api2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "egym",
+  "specs": [
+   "openapi/_original/egym-canonical-groupx-classes-openapi-original.yml",
+   "openapi/_original/egym-canonical-groupx-classes-openapi.yml",
+   "openapi/_original/egym-data-export-openapi-original.json",
+   "openapi/_original/egym-data-export-openapi.yml",
+   "openapi/_original/egym-data-hub-openapi-original.json",
+   "openapi/_original/egym-data-hub-openapi.yml",
+   "openapi/_original/egym-equipment-vendor-server-openapi-original.json",
+   "openapi/_original/egym-equipment-vendor-server-openapi.yml",
+   "openapi/_original/egym-equipment-vendor-standalone-openapi-original.json",
+   "openapi/_original/egym-equipment-vendor-standalone-openapi.yml",
+   "openapi/_original/egym-mms-api-v1-openapi-original.yaml",
+   "openapi/_original/egym-mms-api-v1-openapi.yml",
+   "openapi/_original/egym-mms-api-v2-openapi-original.json",
+   "openapi/_original/egym-mms-api-v2-openapi.yml",
+   "openapi/_original/egym-user-connect-openapi-original.json",
+   "openapi/_original/egym-user-connect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fourthwall",
+  "specs": [
+   "openapi/_original/fourthwall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ghost-org",
+  "specs": [
+   "openapi/_original/ghost-org-admin-api-openapi.yml",
+   "openapi/_original/ghost-org-content-api-openapi.yml",
+   "openapi/_original/ghost-org-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hang",
+  "specs": [
+   "openapi/_original/hang-openapi.json"
+  ]
+ },
+ {
+  "slug": "hint-health",
+  "specs": [
+   "openapi/_original/hint-health-hint-health-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kajabi",
+  "specs": [
+   "openapi/_original/kajabi-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "memberclicks",
+  "specs": [
+   "openapi/_original/memberclicks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mighty-networks",
+  "specs": [
+   "openapi/_original/mighty-networks-admin-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "momence",
+  "specs": [
+   "openapi/_original/momence-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nar",
+  "specs": [
+   "openapi/_original/nar-m1-gateway-external-openapi.json"
+  ]
+ },
+ {
+  "slug": "neonone",
+  "specs": [
+   "openapi/_original/neonone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neuehouse",
+  "specs": [
+   "openapi/_original/neuehouse-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "patreon",
+  "specs": [
+   "openapi/_original/patreon-openapi.yml"
+  ]
+ },
+ {
+  "slug": "payhip",
+  "specs": [
+   "openapi/_original/payhip-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rocket-lawyer",
+  "specs": [
+   "openapi/_original/rocket-lawyer-authentication-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-events-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "servicetitan",
+  "specs": [
+   "openapi/_original/servicetitan-accounting-api-openapi.yml",
+   "openapi/_original/servicetitan-crm-api-openapi.yml",
+   "openapi/_original/servicetitan-dispatch-api-openapi.yml",
+   "openapi/_original/servicetitan-equipment-systems-api-openapi.yml",
+   "openapi/_original/servicetitan-inventory-api-openapi.yml",
+   "openapi/_original/servicetitan-jpm-api-openapi.yml",
+   "openapi/_original/servicetitan-pricebook-api-openapi.yml",
+   "openapi/_original/servicetitan-settings-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teachable",
+  "specs": [
+   "openapi/_original/teachable-admin-openapi.yml",
+   "openapi/_original/teachable-oauth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unlock-protocol",
+  "specs": [
+   "openapi/_original/unlock-protocol-locksmith-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wellnessliving",
+  "specs": [
+   "openapi/_original/wellnessliving-openapi.yml"
+  ]
+ }
+]

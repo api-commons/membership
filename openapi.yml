@@ -1,0 +1,113 @@
+openapi: 3.1.0
+info:
+  title: Membership (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Membership interface, distilled from the harvested OpenAPI of 26 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /members:
+    get:
+      operationId: listMembers
+      summary: List members
+      tags:
+      - Members
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Member'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createMember
+      summary: Create a member
+      tags:
+      - Members
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /members/{member_id}:
+    parameters:
+    - $ref: '#/components/parameters/member_id'
+    get:
+      operationId: getMember
+      summary: Get a member
+      tags:
+      - Members
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteMember
+      summary: Delete a member
+      tags:
+      - Members
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateMember
+      summary: Update a member
+      tags:
+      - Members
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+components:
+  schemas:
+    Member:
+      $ref: ./schema/member.json
+  parameters:
+    member_id:
+      name: member_id
+      in: path
+      required: true
+      schema:
+        type: string

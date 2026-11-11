@@ -1,0 +1,45 @@
+aid: common-membership
+name: Membership
+type: Common
+description: 'The common Membership vocabulary, distilled from the harvested OpenAPI of 26 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Membership
+- Associations
+- Membership Management
+- Association Management
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/membership/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-membership:membership
+  name: Common Membership Interface
+  description: The Membership interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/membership
+  tags:
+  - Membership
+  - Associations
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/membership/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/membership/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/membership/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: member
+    url: https://raw.githubusercontent.com/api-commons/membership/main/schema/member.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/membership/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

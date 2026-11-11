@@ -1,0 +1,14 @@
+provider: nar
+apis_io: https://apis.io/providers/nar/
+context: membership
+generated: '2026-11-11'
+concepts:
+  member:
+    path_segment:
+    - member
+    properties:
+      id: member_Id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/nar-m1-gateway-external-openapi.json#GET /ext/Member/{memberId}
+    - openapi/_original/nar-m1-gateway-external-openapi.json#PATCH /ext/Member

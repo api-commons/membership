@@ -1,0 +1,525 @@
+{
+ "cohort_size": 26,
+ "unreadable": [],
+ "concepts": {
+  "member": {
+   "antavo": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "metadata": "object",
+     "payload": "object",
+     "id": "string",
+     "customer_id": "string",
+     "club_id": "string",
+     "role": "string",
+     "balance": "object",
+     "donation_intervals": "array",
+     "spend_limit": "object"
+    },
+    "evidence": [
+     "openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members",
+     "openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members/{customer_id}"
+    ]
+   },
+   "fourthwall": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "email": "string",
+     "tierId": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/fourthwall-openapi.yml#GET /open-api/v1.0/memberships/members",
+     "openapi/_original/fourthwall-openapi.yml#GET /open-api/v1.0/memberships/members/{id}"
+    ]
+   },
+   "ghost-org": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "uuid": "string",
+     "email": "string",
+     "name": "string",
+     "note": "string",
+     "geolocation": "string",
+     "status": "string",
+     "labels": "array",
+     "subscriptions": "array",
+     "newsletters": "array",
+     "avatar_image": "string",
+     "email_count": "integer",
+     "email_opened_count": "integer",
+     "email_open_rate": "number",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /members/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /members/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /members/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#POST /members/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#PUT /members/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/members/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/members/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#POST /admin/members/",
+     "openapi/_original/ghost-org-openapi.yml#PUT /admin/members/{id}/"
+    ]
+   },
+   "hang": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "phone": "string",
+     "phone_verified": "boolean",
+     "created_at": "number",
+     "stripe_customer_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/hang-openapi.json#GET /v2/admin/program-segments/{id}/members"
+    ]
+   },
+   "hint-health": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "end_date": "string",
+     "fixed_period_rate_in_cents": "integer",
+     "list_price_in_cents": "integer",
+     "member_type": "string",
+     "period_rate_in_cents": "integer",
+     "revenue_in_cents": "integer",
+     "start_date": "string",
+     "status": "string",
+     "patient": "object"
+    },
+    "evidence": [
+     "openapi/_original/hint-health-hint-health-api-openapi.yml#DELETE /provider/memberships/{membership_id}/members/{id}",
+     "openapi/_original/hint-health-hint-health-api-openapi.yml#GET /provider/memberships/{membership_id}/members",
+     "openapi/_original/hint-health-hint-health-api-openapi.yml#GET /provider/memberships/{membership_id}/members/{id}",
+     "openapi/_original/hint-health-hint-health-api-openapi.yml#PATCH /provider/memberships/{membership_id}/members/{id}",
+     "openapi/_original/hint-health-hint-health-api-openapi.yml#POST /provider/memberships/{membership_id}/members"
+    ]
+   },
+   "mighty-networks": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "email": "string",
+     "member_type": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "time_zone": "string",
+     "location": "string",
+     "bio": "string",
+     "referral_count": "integer",
+     "avatar": "string",
+     "categories": "string",
+     "permalink": "string",
+     "ambassador_level": "string",
+     "role": "string",
+     "name": "string",
+     "description": "string",
+     "status": "string",
+     "pricing_type": "string",
+     "visible_to_members": "boolean",
+     "external": "boolean",
+     "multiple": "boolean",
+     "space_ids": "array",
+     "send_welcome_email": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/mighty-networks-admin-api-openapi.json#DELETE /admin/v1/networks/{network_id}/members/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#DELETE /admin/v1/networks/{network_id}/plans/{plan_id}/members/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#DELETE /admin/v1/networks/{network_id}/spaces/{space_id}/members/{user_id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/members",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/members/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/plans/{plan_id}/members",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/plans/{plan_id}/members/{member_id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/spaces/{space_id}/members",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#GET /admin/v1/networks/{network_id}/spaces/{space_id}/members/{user_id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#PATCH /admin/v1/networks/{network_id}/members/{id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#PATCH /admin/v1/networks/{network_id}/spaces/{space_id}/members/{user_id}/",
+     "openapi/_original/mighty-networks-admin-api-openapi.json#POST /admin/v1/networks/{network_id}/members"
+    ]
+   },
+   "momence": {
+    "segments": [
+     "members",
+     "member"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "pageSize": "integer",
+     "totalCount": "integer",
+     "sortBy": "string",
+     "sortOrder": "string",
+     "id": "integer",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phoneNumber": "string",
+     "pictureUrl": "string",
+     "firstSeen": "string",
+     "lastSeen": "string",
+     "visits": "object",
+     "customerFields": "array",
+     "customerTags": "array",
+     "memberId": "integer",
+     "homeLocationId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/momence-openapi.yml#GET /api/v2/host/members",
+     "openapi/_original/momence-openapi.yml#GET /api/v2/host/members/{memberId}",
+     "openapi/_original/momence-openapi.yml#GET /api/v2/member",
+     "openapi/_original/momence-openapi.yml#POST /api/v2/host/members",
+     "openapi/_original/momence-openapi.yml#PUT /api/v2/member"
+    ]
+   },
+   "nar": {
+    "segments": [
+     "member"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH collection"
+    ],
+    "properties": {
+     "member_Id": "integer",
+     "updates": "object"
+    },
+    "evidence": [
+     "openapi/_original/nar-m1-gateway-external-openapi.json#GET /ext/Member/{memberId}",
+     "openapi/_original/nar-m1-gateway-external-openapi.json#PATCH /ext/Member"
+    ]
+   },
+   "patreon": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/campaigns/{campaign_id}/members",
+     "openapi/_original/patreon-openapi.yml#GET /api/oauth2/v2/members/{member_id}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "antavo",
+    "bjs-wholesale-club",
+    "blackbird",
+    "breeze-chms",
+    "circle-community",
+    "cobot",
+    "egym",
+    "fourthwall",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "kajabi",
+    "memberclicks",
+    "mighty-networks",
+    "momence",
+    "nar",
+    "neonone",
+    "patreon",
+    "payhip",
+    "rocket-lawyer",
+    "servicetitan",
+    "teachable",
+    "unlock-protocol"
+   ],
+   "kebab-case": [
+    "antavo",
+    "egym",
+    "fourthwall",
+    "hang",
+    "memberclicks",
+    "momence",
+    "rocket-lawyer",
+    "servicetitan",
+    "unlock-protocol"
+   ],
+   "snake_case": [
+    "blackbird",
+    "breeze-chms",
+    "circle-community",
+    "cobot",
+    "hang",
+    "hint-health",
+    "kajabi",
+    "mighty-networks",
+    "teachable"
+   ],
+   "other": [
+    "antavo",
+    "cobot",
+    "egym",
+    "unlock-protocol"
+   ],
+   "camelCase": [
+    "neonone",
+    "rocket-lawyer",
+    "unlock-protocol"
+   ],
+   "PascalCase": [
+    "nar",
+    "wellnessliving"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "antavo",
+    "blackbird",
+    "circle-community",
+    "cobot",
+    "egym",
+    "fourthwall",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "kajabi",
+    "mighty-networks",
+    "nar",
+    "neonone",
+    "patreon",
+    "payhip",
+    "servicetitan",
+    "unlock-protocol"
+   ],
+   "camelCase": [
+    "antavo",
+    "bjs-wholesale-club",
+    "cobot",
+    "egym",
+    "fourthwall",
+    "memberclicks",
+    "momence",
+    "nar",
+    "neonone",
+    "rocket-lawyer",
+    "unlock-protocol"
+   ],
+   "snake_case": [
+    "antavo",
+    "breeze-chms",
+    "circle-community",
+    "hang",
+    "hint-health",
+    "kajabi",
+    "mighty-networks",
+    "patreon",
+    "teachable"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "antavo",
+    "bjs-wholesale-club",
+    "blackbird",
+    "breeze-chms",
+    "circle-community",
+    "cobot",
+    "egym",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "kajabi",
+    "mighty-networks",
+    "momence",
+    "patreon",
+    "payhip",
+    "rocket-lawyer",
+    "servicetitan",
+    "teachable",
+    "unlock-protocol",
+    "wellnessliving"
+   ],
+   "snake_case": [
+    "antavo",
+    "blackbird",
+    "breeze-chms",
+    "circle-community",
+    "cobot",
+    "fourthwall",
+    "hang",
+    "hint-health",
+    "mighty-networks",
+    "momence",
+    "patreon",
+    "payhip",
+    "teachable",
+    "wellnessliving"
+   ],
+   "camelCase": [
+    "bjs-wholesale-club",
+    "egym",
+    "memberclicks",
+    "momence",
+    "neonone",
+    "rocket-lawyer",
+    "servicetitan",
+    "unlock-protocol"
+   ],
+   "other": [
+    "antavo",
+    "cobot",
+    "kajabi",
+    "unlock-protocol"
+   ],
+   "PascalCase": [
+    "antavo"
+   ],
+   "kebab-case": [
+    "egym"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "antavo",
+    "bjs-wholesale-club",
+    "blackbird",
+    "circle-community",
+    "ghost-org",
+    "hang",
+    "mighty-networks",
+    "momence",
+    "payhip",
+    "servicetitan",
+    "teachable",
+    "unlock-protocol"
+   ],
+   "limit": [
+    "antavo",
+    "bjs-wholesale-club",
+    "breeze-chms",
+    "egym",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "rocket-lawyer"
+   ],
+   "page_size": [
+    "blackbird",
+    "kajabi",
+    "memberclicks",
+    "momence",
+    "neonone",
+    "rocket-lawyer",
+    "servicetitan",
+    "unlock-protocol"
+   ],
+   "offset": [
+    "antavo",
+    "breeze-chms",
+    "egym",
+    "hang",
+    "hint-health",
+    "rocket-lawyer"
+   ],
+   "per_page": [
+    "circle-community",
+    "hang",
+    "mighty-networks"
+   ],
+   "start": [
+    "breeze-chms",
+    "teachable"
+   ],
+   "cursor": [
+    "egym",
+    "rocket-lawyer"
+   ]
+  },
+  "property": {
+   "lower": [
+    "antavo",
+    "fourthwall",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "mighty-networks",
+    "momence",
+    "nar"
+   ],
+   "snake_case": [
+    "antavo",
+    "ghost-org",
+    "hang",
+    "hint-health",
+    "mighty-networks"
+   ],
+   "camelCase": [
+    "fourthwall",
+    "momence"
+   ],
+   "other": [
+    "nar"
+   ]
+  }
+ }
+}

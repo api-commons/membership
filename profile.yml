@@ -1,0 +1,144 @@
+context: membership
+name: Membership
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Membership
+  - Associations
+  - Membership Management
+  - Association Management
+  - Clubs
+  - Gyms
+  - Member Management
+  providers_with_harvested_openapi: 26
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  member:
+    segments_seen:
+      members: 8
+      member: 2
+    providers_exposing: 9
+    providers_with_readable_schema: 8
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 0.889
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.889
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.444
+      tier: extended
+    - operation: DELETE item
+      providers: 3
+      share: 0.333
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.333
+      tier: extended
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 8
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - uuid
+      - memberId
+      - member_Id
+    - name: email
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - email
+    - name: status
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - status
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - created_at
+    - name: first_name
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - first_name
+      - firstName
+    - name: last_name
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - last_name
+      - lastName
+    long_tail_count: 57
+    long_tail_sample:
+    - member_type
+    - name
+    - phone
+    - role
+    - updated_at
+    - ambassador_level
+    - avatar
+    - avatar_image
+    - balance
+    - bio
+    - categories
+    - club_id
+    - customer_fields
+    - customer_id
+    - customer_tags
+    - description
+    - donation_intervals
+    - email_count
+    - email_open_rate
+    - email_opened_count
+    - end_date
+    - external
+    - first_seen
+    - fixed_period_rate_in_cents
+    - geolocation
+    - home_location_id
+    - labels
+    - last_seen
+    - list_price_in_cents
+    - location
+    - metadata
+    - multiple
+    - newsletters
+    - note
+    - page_size
+    - patient
+    - payload
+    - period_rate_in_cents
+    - permalink
+    - phone_verified

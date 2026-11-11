@@ -1,0 +1,18 @@
+provider: hint-health
+apis_io: https://apis.io/providers/hint-health/
+context: membership
+generated: '2026-11-11'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/hint-health-hint-health-api-openapi.yml#DELETE /provider/memberships/{membership_id}/members/{id}
+    - openapi/_original/hint-health-hint-health-api-openapi.yml#GET /provider/memberships/{membership_id}/members
+    - openapi/_original/hint-health-hint-health-api-openapi.yml#GET /provider/memberships/{membership_id}/members/{id}
+    - openapi/_original/hint-health-hint-health-api-openapi.yml#PATCH /provider/memberships/{membership_id}/members/{id}
+    - openapi/_original/hint-health-hint-health-api-openapi.yml#POST /provider/memberships/{membership_id}/members

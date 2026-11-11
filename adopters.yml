@@ -1,0 +1,48 @@
+context: membership
+generated: '2026-11-11'
+adopters:
+- provider: antavo
+  apis_io: https://apis.io/providers/antavo/
+  crosswalk: crosswalk/antavo.yml
+  concepts:
+  - member
+- provider: fourthwall
+  apis_io: https://apis.io/providers/fourthwall/
+  crosswalk: crosswalk/fourthwall.yml
+  concepts:
+  - member
+- provider: ghost-org
+  apis_io: https://apis.io/providers/ghost-org/
+  crosswalk: crosswalk/ghost-org.yml
+  concepts:
+  - member
+- provider: hang
+  apis_io: https://apis.io/providers/hang/
+  crosswalk: crosswalk/hang.yml
+  concepts:
+  - member
+- provider: hint-health
+  apis_io: https://apis.io/providers/hint-health/
+  crosswalk: crosswalk/hint-health.yml
+  concepts:
+  - member
+- provider: mighty-networks
+  apis_io: https://apis.io/providers/mighty-networks/
+  crosswalk: crosswalk/mighty-networks.yml
+  concepts:
+  - member
+- provider: momence
+  apis_io: https://apis.io/providers/momence/
+  crosswalk: crosswalk/momence.yml
+  concepts:
+  - member
+- provider: nar
+  apis_io: https://apis.io/providers/nar/
+  crosswalk: crosswalk/nar.yml
+  concepts:
+  - member
+- provider: patreon
+  apis_io: https://apis.io/providers/patreon/
+  crosswalk: crosswalk/patreon.yml
+  concepts:
+  - member

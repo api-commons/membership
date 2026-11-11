@@ -1,0 +1,15 @@
+provider: antavo
+apis_io: https://apis.io/providers/antavo/
+context: membership
+generated: '2026-11-11'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members
+    - openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members/{customer_id}

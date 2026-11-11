@@ -1,0 +1,23 @@
+provider: momence
+apis_io: https://apis.io/providers/momence/
+context: membership
+generated: '2026-11-11'
+concepts:
+  member:
+    path_segment:
+    - members
+    - member
+    properties:
+      id:
+      - id
+      - memberId
+      email: email
+      first_name: firstName
+      last_name: lastName
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/momence-openapi.yml#GET /api/v2/host/members
+    - openapi/_original/momence-openapi.yml#GET /api/v2/host/members/{memberId}
+    - openapi/_original/momence-openapi.yml#GET /api/v2/member
+    - openapi/_original/momence-openapi.yml#POST /api/v2/host/members
+    - openapi/_original/momence-openapi.yml#PUT /api/v2/member

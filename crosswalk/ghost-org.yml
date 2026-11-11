@@ -1,0 +1,22 @@
+provider: ghost-org
+apis_io: https://apis.io/providers/ghost-org/
+context: membership
+generated: '2026-11-11'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      id:
+      - id
+      - uuid
+      email: email
+      status: status
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /members/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /members/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /members/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#POST /members/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#PUT /members/{id}/
